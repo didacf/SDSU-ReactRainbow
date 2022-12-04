@@ -9,12 +9,13 @@ function App(){
         'violet', 'blue',
         'lightblue', 'green',
         'greenyellow', 'yellow',
-        'orange', 'red'
+        'orange', 'red',  
+        'pink', 'cyan', 'darkblue'
     ])
     
     let colorMap = colors.map((color, i) => {
         return (
-            <ColorBlock color={color} />
+            <ColorBlock color={color} key={i}/>
         )
     })
 
